@@ -10,11 +10,17 @@
 }
 
 \usage{
-dashCollapsibleTree(id=NULL, data=NULL)
+dashCollapsibleTree(id=NULL, data=NULL, onChange=NULL, onAction=NULL, onNodeToggle=NULL)
 }
 
 \arguments{
 \item{id}{Character. The ID used to identify this component in Dash callbacks}
 
-\item{data}{Unnamed list. }
+\item{data}{Named list. }
+
+\item{onChange}{}
+
+\item{onAction}{}
+
+\item{onNodeToggle}{}
 }

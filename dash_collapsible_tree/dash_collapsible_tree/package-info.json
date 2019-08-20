@@ -17,8 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "ramda": "^0.26.1",
-    "react-collapsible-tree": "^2.0.0",
-    "react-super-treeview": "^0.3.3"
+    "react-dropdown-tree-select": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",

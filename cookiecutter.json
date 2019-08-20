@@ -1,0 +1,20 @@
+{
+  "project_name": "dash-collpsible-tree",
+  "project_shortname": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "component_name": "{{ cookiecutter.project_shortname.split('_')|map('capitalize')|join('') }}",
+  "r_prefix": "",
+  "author_name": "Wes Jones",
+  "author_email": "westonkjones@gmail.com",
+  "github_org": "",
+  "description": "A dash component for react-collapsible-tree",
+  "license": [
+    "MIT License",
+    "BSD License",
+    "ISC License",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ],
+  "publish_on_npm": true,
+  "install_dependencies": true
+}

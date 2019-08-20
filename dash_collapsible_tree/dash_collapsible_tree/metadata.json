@@ -13,7 +13,28 @@
       },
       "data": {
         "type": {
-          "name": "array"
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onChange": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onAction": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onNodeToggle": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""

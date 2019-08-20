@@ -9,9 +9,9 @@ class DashCollapsibleTree(Component):
 
 Keyword arguments:
 - id (string; optional): The ID used to identify this component in Dash callbacks
-- data (list; optional)"""
+- data (dict; optional)"""
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, data=Component.UNDEFINED, **kwargs):
+    def __init__(self, id=Component.UNDEFINED, data=Component.UNDEFINED, onChange=Component.UNDEFINED, onAction=Component.UNDEFINED, onNodeToggle=Component.UNDEFINED, **kwargs):
         self._prop_names = ['id', 'data']
         self._type = 'DashCollapsibleTree'
         self._namespace = 'dash_collapsible_tree'
