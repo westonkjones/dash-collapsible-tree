@@ -1,8 +1,8 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-dashCollapsibleTree <- function(id=NULL, items=NULL, topIds=NULL) {
+dashCollapsibleTree <- function(id=NULL, data=NULL) {
     
-    props <- list(id=id, items=items, topIds=topIds)
+    props <- list(id=id, data=data)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -10,7 +10,7 @@ dashCollapsibleTree <- function(id=NULL, items=NULL, topIds=NULL) {
         props = props,
         type = 'DashCollapsibleTree',
         namespace = 'dash_collapsible_tree',
-        propNames = c('id', 'items', 'topIds'),
+        propNames = c('id', 'data'),
         package = 'dashCollapsibleTree'
         )
 

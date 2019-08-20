@@ -1,17 +1,28 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import Tree from 'react-collapsible-tree';
+import SuperTreeView from 'react-super-treeview';
+import './styles.css';
 
 export default class DashCollapsibleTree extends Component {
+
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        data: props.data
+      }
+    }
+
     render() {
-        const {id, items, topIds, onSelection } = this.props;
+        const {id, data} = this.props;
 
         return (
-          <Tree
-            id={id}
-            items={items}
-            topIds={topIds}
-            onSelection={onSelection}
+          <SuperTreeView
+            data={ this.state.data }
+            onUpdateCb={(updatedData) => {
+              this.setState({data: updatedData})
+            }}
           />
         );
     }
@@ -25,9 +36,7 @@ DashCollapsibleTree.propTypes = {
      */
     id: PropTypes.string,
 
-    items: PropTypes.object,
-
-    topIds: PropTypes.array,
+    data: PropTypes.array,
 
     /**
      * Dash-assigned callback that should be called whenever any of the

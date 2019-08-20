@@ -10,13 +10,11 @@
 }
 
 \usage{
-dashCollapsibleTree(id=NULL, items=NULL, topIds=NULL)
+dashCollapsibleTree(id=NULL, data=NULL)
 }
 
 \arguments{
 \item{id}{Character. The ID used to identify this component in Dash callbacks}
 
-\item{items}{Named list. }
-
-\item{topIds}{Unnamed list. }
+\item{data}{Unnamed list. }
 }
